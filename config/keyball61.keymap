@@ -31,21 +31,21 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp TILDE         &kp N1        &kp N2        &kp N3  &kp N4     &kp N5                           &kp N6  &kp N7  &kp N8     &kp N9   &kp N0      &kp BACKSLASH
-&kp TAB           &kp Q         &kp W         &kp E   &kp R      &kp T                            &kp Y   &kp U   &kp I      &kp O    &kp P       &kp BACKSPACE
-&kp CAPS          &kp A         &kp S         &kp D   &kp F      &kp G                            &kp H   &kp J   &kp K      &kp L    &kp SEMI    &kp SQT
-&kp LEFT_SHIFT    &kp Z         &kp X         &kp C   &kp V      &kp B      &mkp MCLK  &mo 1      &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH    &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 2   &mkp LCLK  &mkp RCLK  &kp SPACE  &kp SPACE  &mo 3                               &kp C_MENU  &kp ENTER
+&kp TILDE         &kp N1        &kp N2  &kp N3        &kp N4     &kp N5                           &kp N6  &kp N7  &kp N8     &kp N9   &kp N0      &kp BACKSLASH
+&kp TAB           &kp Q         &kp W   &kp E         &kp R      &kp T                            &kp Y   &kp U   &kp I      &kp O    &kp P       &kp BACKSPACE
+&kp CAPS          &kp A         &kp S   &kp D         &kp F      &kp G                            &kp H   &kp J   &kp K      &kp L    &kp SEMI    &kp SQT
+&kp LEFT_SHIFT    &kp Z         &kp X   &kp C         &kp V      &kp B      &mkp MCLK  &mo 1      &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH    &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp LEFT_WIN  &mo 2   &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &kp SPACE  &kp SPACE  &mo 3                               &kp C_MENU  &kp ENTER
             >;
         };
 
         number_layer {
             bindings = <
-&trans  &kp N1    &kp N2        &kp N3     &kp N4  &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&trans  &trans    &kp UP_ARROW  &trans     &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans        &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans        &trans     &trans  &trans  &trans  &trans  &trans                          &trans  &trans
+&trans          &kp N1    &kp N2        &kp N3     &kp N4  &kp N5                        &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&msc SCRL_UP    &trans    &kp UP_ARROW  &trans     &trans  &kp C_VOL_UP                  &trans  &trans  &trans  &trans  &trans  &kp DEL
+&msc SCRL_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &kp C_VOL_DN                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans    &trans        &trans     &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans    &trans        &trans     &trans  &trans        &trans  &trans  &trans                          &trans  &trans
             >;
 
             label = "NUM";
@@ -54,11 +54,11 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&kp ESCAPE      &trans      &trans        &trans        &trans        &trans                  &trans            &trans             &trans    &kp MINUS      &kp EQUAL  &trans
-&trans          &trans      &trans        &trans        &trans        &trans                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &kp PAGE_UP    &trans     &trans
-&trans          &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans                  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp HOME  &kp PAGE_DOWN  &kp END    &trans
-&kp LEFT_SHIFT  &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans            &trans             &trans    &trans         &trans     &trans
-&trans          &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans                                                        &trans     &trans
+&kp ESCAPE      &trans      &trans        &trans        &trans        &trans                        &trans            &trans             &trans    &kp MINUS      &kp EQUAL  &trans
+&trans          &trans      &trans        &trans        &trans        &trans                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &kp PAGE_UP    &trans     &kp DEL
+&trans          &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp HOME  &kp PAGE_DOWN  &kp END    &trans
+&kp LEFT_SHIFT  &trans      &trans        &trans        &trans        &trans        &trans  &trans  &trans            &trans             &trans    &trans         &trans     &trans
+&trans          &trans      &trans        &trans        &trans        &trans        &trans  &trans  &trans                                                        &trans     &trans
             >;
         };
 
