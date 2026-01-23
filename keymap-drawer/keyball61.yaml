@@ -60,7 +60,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
   - FUN
-  - MENU
+  - Gui+APPLICATION
   - {t: '$$mdi:keyboard-return$$', type: enter}
   NUM:
   - {t: '$$mdi:transfer$$', type: trans}
